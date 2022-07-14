@@ -1,0 +1,194 @@
+.header {
+  @include border(null, 1px, null, null, solid, $strokeLight);
+  &__container {
+    min-height: 60px;
+    @include centeredFlex(flex);
+    @include tablet {
+      align-items: center;
+    }
+  }
+}
+
+.nav {
+  @include tablet {
+    @include centeredFlex(flex);
+  }
+  &__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include tablet{
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+    @include desktop {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+    &--dark {
+      color: $textDark;
+    }
+    &--light {
+      color: $textWhite;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  position: relative;  
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @include tablet {
+    margin-left: 88px;
+  }
+  @include desktop {
+    margin-left: 93px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    @include font(inherit, 500, 14px, 16px, 0.02em, $textMain);
+    @include transition(null, null, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    @include tablet {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    &:hover,
+    &:focus {
+      color: $colorAccent;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      bottom: -1px;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 4px;
+      background: $colorAccent;
+      border-radius: 2px;
+      opacity: 0;
+      @include transition(null, opacity, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+    &--current {
+      color: $colorAccent;
+    }
+    &--current::after {
+      opacity: 1;
+    }
+  }
+}
+
+
+.mob-menu {
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+  @media screen and (max-width: 767px){
+    position: fixed;
+    background-color: $bgMain;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    transition: null, null, opacity, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    overflow: auto;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+  &__link {
+    display: block;
+    @include font(inherit, 500, 40px, 47px, 0.02em, $textMain);
+    @include transition(null, null, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    &:hover,
+    &:focus {
+      color: $colorAccent;
+    }
+    &--current {
+      color: $colorAccent;
+    }
+}
+  &__connect {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__connect-item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  &__tel {
+    display: block;
+    @include font(inherit, 500, 25px, 40px, 0.02em, $colorAccent);
+    @include transition(null, null, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    &:hover,
+    &:focus {
+      color: $bgHover;
+    }
+    @media screen and (min-width:377px) {
+      @include font(null, null, 34px, 40px, null, null);
+    }
+  }  
+    &__email {
+    @include font(inherit, 500, 18px, 28px, 0.02em, $textSecondary);
+    display: block;
+    @include transition(null, null, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    &:hover,
+    &:focus {
+      color: $colorAccent;
+    }
+    @media screen and (min-width:377px) {
+      @include font(null, null, 30px, 40px, null, null);
+    }
+  }
+  &__soc {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__soc-item {
+    position: relative;
+    display: block;
+    @include font(inherit, 500, 18px, 22px, 0.02em, $colorAccent);
+    &:hover,
+    &:focus {
+      color: $bgHover;
+    }
+    &:not(:last-child) {
+      margin-right: 20px;
+  }
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: -10px;
+      width: 1px;
+      height: 22px;
+      border: 1px solid #21212133;
+    }   
+  }
+  &__soc-link {
+    color: currentColor;
+  }
+}

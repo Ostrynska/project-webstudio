@@ -1,0 +1,44 @@
+.clients {
+  &__title {
+    margin-bottom: 30px;
+    @include desktop {
+      margin-bottom: 50px;
+    }
+  }
+  &__list {
+    @include centeredFlex(flex);
+    gap: 30px;
+  }
+  &__item {
+    width: 210px;
+    height: 92px;
+    flex-basis: calc((100% - 30px) / 2);
+
+    @include tablet {
+      flex-basis: calc((100% - 60px) / 3);
+      width: 226px;
+    }
+    @include desktop {
+      flex-basis: calc((100% - 150px) / 6);
+      width: 170px;
+    }   
+  }
+  &__link {
+    @include centeredFlex(flex);
+    width: 100%;
+    height: 100%;
+    background-color: $bgMain;
+    outline: transparent;
+    color: $colorGrey;
+    @include border(1px, 1px, 1px, 1px, 4px, $colorGrey);
+    @include transition(null, color, border, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    &:hover,
+    &:focus {
+      border: 1px solid $colorAccent;
+      color: $colorAccent;
+    }
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,39 @@
+.team {
+  background-color: $bgLight;
+  &__title {
+    margin-bottom: 30px;
+    @include desktop {
+      margin-bottom: 50px;
+    }
+  }
+  &__member {
+    margin-bottom: 10px;
+    @include font(inherit, 500, 16px, 19px, 0.03em, $textMain);
+  }
+  &__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+    @include boxShadow();
+  }
+  &__list {
+    @include centeredFlex(flex);
+    gap: 30px;
+  }
+  &__item {
+    margin-bottom: 16px;
+    @include font(inherit, 400, 16px, 19px, 0.03em, $textSecondary);
+  }
+  &__items {
+    @include tablet {
+      max-width: 354px;
+      flex-basis: calc(100% - 30px / 2);
+    }
+    @include desktop {
+      max-width: 270px;
+      flex-basis:content;
+    }
+  }
+}
+

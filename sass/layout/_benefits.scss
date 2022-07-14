@@ -1,0 +1,39 @@
+.benefits {
+  &__list {
+    @include centeredFlex(flex);
+    gap: 30px;
+    @include tablet {
+      align-items: flex-start;
+    }
+  }
+  &__item {
+    justify-content: center;
+    @include tablet {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+      align-items: baseline;
+      flex-basis: calc((100% - 90px) / 4);
+    }  
+  }
+  &__icons {
+    margin-bottom: 30px;
+    @include centeredFlex(flex);
+    border-radius: 4px;
+    height: 120px;
+    background-color: $bgLight;
+  }
+  &__title {
+    margin-bottom: 10px;
+    @include font(inherit, 700, 14px, 16px, 0.03em, $textMain);
+    text-transform: uppercase;
+    text-align: center;
+    @include tablet {
+      text-align: start;
+    }
+  }
+  &__text {
+    @include font(inherit, 400, 14px, 24px, 0.03em, $textSecondary);
+  }
+}
+

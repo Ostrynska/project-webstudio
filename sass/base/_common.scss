@@ -1,0 +1,15 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $textMain;
+  background: $bgMain;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}

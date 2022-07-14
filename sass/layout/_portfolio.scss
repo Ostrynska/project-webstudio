@@ -1,0 +1,47 @@
+.product {
+  @include centeredFlex(flex);
+  gap: 30px;
+  @include tablet {
+    justify-content: flex-start;
+  }
+  &__item {
+    @include tablet {
+      flex-basis: calc((100% - 30px) / 2);
+      min-width: 354px;
+    }
+    @include desktop {
+      flex-basis: calc((100% - 60px) / 3);
+      min-width: 370px;
+    }
+  }
+  &__link {
+    display: block;
+    height: 100%;
+    @include transition(null, null, box-shadow, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    &:hover,
+    &:focus {
+      @include boxShadow();
+    }
+  }
+  &__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  &__description {
+    padding: 20px 24px;
+    flex-grow: 1;
+    color: $bgMain;
+    @include border(0, 1px, 1px, 1px, null, $strokeLight);
+  }
+  &__name {
+    margin-bottom: 4px;
+    @include font(inherit, 700, 18px, 36px, 0.06em, $textMain);
+  }
+  &__category {
+    @include font(inherit, 400, 16px, 30px, 0.03em, $textSecondary);
+  }
+}
+
+.abbr {
+  text-transform: uppercase;
+}

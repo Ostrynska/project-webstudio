@@ -1,0 +1,147 @@
+@mixin font($ff, $fw, $fs, $lh, $ls, $c) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: calc($lh / $fs);
+  letter-spacing: $ls;
+  color: $c;
+}
+
+@mixin bg($gr, $img, $bgr, $bgp, $bgs) {
+  background-image: $gr, $img;
+  background-repeat: $bgr;
+  background-position: $bgp;
+  background-size: $bgs;
+}
+
+@mixin centeredFlex($f) {
+  display: $f;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@mixin transition($one, $two, $three, $time, $func) {
+  transition-property: $one, $two, $three;
+  transition-duration: $time;
+  transition-timing-function: $func;
+}
+
+@mixin border($bt, $bb, $bl, $br, $brad, $bc) {
+  border-top: $bt;
+  border-bottom: $bb;
+  border-left: $bl;
+  border-right: $br;
+  border-style: solid;
+  border-radius: $brad;
+  border-color: $bc;
+}
+
+@mixin boxShadow() {
+  background-color: $bgMain;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@mixin list($dsp, $fw, $m, $mt, $ml, $mb, $mr) {
+  display: $dsp;
+  flex-wrap: $fw;
+  margin: $m;
+  margin-top: $mt;
+  margin-left: $ml;
+  margin-bottom: $mb;
+  margin-right: $mr;
+}
+
+@mixin btnL($dpl) {
+  display: $dpl;
+  min-width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: $colorAccent;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $textWhite;
+}
+
+@mixin btnM($dpl) {
+  display: $dpl;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  background-color: $colorAccent;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: $textMain;
+  background: $btnDefault;
+  text-align: center;
+
+  padding: 6px, 22px;
+}
+
+@mixin btnS() {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin btnHoverFocus($c, $bgc) {
+  color: $c;
+  background: $bgc;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@mixin input($pt, $pr, $pb, $pl, $m, $w, $h, $bcol) {
+  padding-top: $pt;
+  padding-right: $pr;
+  padding-bottom: $pb;
+  padding-left: $pl;
+  margin: $m;
+  width: $w;
+  height: $h;
+  border: 1px solid $bcol;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: $textWhite;
+}
+
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}

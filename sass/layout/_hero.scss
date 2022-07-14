@@ -1,0 +1,56 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  max-width: 480px;
+  text-align: center;
+  flex-grow: 1;
+  @include bg(
+    linear-gradient(#2f303a66, #2f303a66),
+    url(../../images/hero/hero-bg-480.jpg),
+    no-repeat,
+    center,
+    cover
+  );
+  @include retina {
+    background-image: linear-gradient(#2f303a66, #2f303a66), url(../../images/hero/hero-bg-2x-480.jpg);
+  }
+  @include tablet {
+    max-width: 768px;
+    @include bg(
+      linear-gradient(#2f303a66, #2f303a66),
+      url(../../images/hero/hero-bg-768.jpg), null, null, null);
+      @include retina {
+        background-image: linear-gradient(#2f303a66, #2f303a66),
+          url(../../images/hero/hero-bg-2x-768.jpg);
+      }
+  }
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    @include bg(
+      linear-gradient(#2f303a66, #2f303a66),
+      url(../../images/hero/hero-bg-1600.jpg), null, null, null);
+    @include retina {
+      background-image: linear-gradient(#2f303a66, #2f303a66), url(../../images/hero/hero-bg-2x-1600.jpg);
+      }
+  }
+
+  &__title {
+    max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    @include font(inherit, 900, 26px, 42px, 0.06em, $textWhite);
+    text-transform: uppercase;
+    
+    @include desktop {
+      max-width: 696px;
+      @include font(null, null, 44px, 60px, null, null);
+    }
+  }
+}

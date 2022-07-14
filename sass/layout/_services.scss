@@ -1,0 +1,29 @@
+.services {
+  @media screen and (max-width: 1199px) {
+      visibility: hidden;
+      display: none;
+    }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__list {
+    @include centeredFlex(flex);
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__thumb {
+    position: relative;
+  }
+  &__lable {
+    position: absolute;
+    @include centeredFlex(flex);
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: $bgLabel;
+    @include font(inherit, 700, 14px, 16px, 0.03em, $textWhite);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

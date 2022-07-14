@@ -1,0 +1,52 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $bgDark;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    @include desktop {
+      display: block;
+    }
+  }
+  &__container {
+    display: block;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @include desktop {
+      align-items: baseline;
+    }  
+  }
+  &__soc-media {
+    text-align: center;
+    margin-bottom: 60px;
+    @include tablet {
+      margin-bottom: 0;
+    }
+    @include desktop {
+      margin-left: 70px;
+    }     
+  }
+  &__text {
+    margin-bottom: 20px;
+    @include font(inherit, 700, 14px, 16px, 00.03em, $textWhite);
+    text-transform: uppercase;
+    @include desktop {
+      text-align: start;
+    }   
+  }
+  &__subscribe {
+    text-align: center;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+    @include desktop {
+      display: block;
+      margin-left: auto;
+    } 
+  }
+}

@@ -1,0 +1,127 @@
+.connect {
+  @include tablet {
+    margin-left: auto;
+  }
+  &-footer {
+    margin-top: 20px;
+  }
+  &__list {
+    @media screen and (max-width: 767px) {
+      display: none;
+      padding-top: 21px;
+      padding-bottom: 21px;
+  }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    @include desktop {
+      @include centeredFlex(flex);
+      flex-direction: row;
+    }
+    &--footer {
+      display: list-item;
+      margin-bottom: 60px;
+      padding-top: 0;
+      padding-bottom: 0;
+      font-style: normal;
+      text-align: center;
+      @include desktop {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__item {
+    &--footer:not(:last-child) {
+      margin-bottom: 8px;
+      }
+    &:last-child {
+      @include desktop {
+        margin-left: 30px;
+      }
+    }
+    &--footer:not(:last-child) {
+      @include desktop {
+        margin-bottom: 9px;
+      }
+    }    
+    &--footer:last-child {
+      margin-left: 0;
+      @include desktop {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__icons {
+    @include tablet {
+      fill: currentColor;
+      margin-right: 8px;
+    }
+    @include desktop {
+      margin-right: 10px;
+    }
+  }
+  &__link {
+    @include font(inherit, 500, 34px, 40px, 0.02em, $colorAccent);
+    
+    @include tablet {
+      display: flex;
+      @include font(inherit, 500, 12px, 14px, 0.02em, $textSecondary);
+      @include transition(null, null, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    }
+
+    @include desktop {
+      @include centeredFlex(flex);
+      padding-top: 32px;
+      padding-bottom: 32px;
+      @include font(null, null, 14px, 16px, null, null);
+      @include transition(null, null, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    }
+    &:hover,
+    &:focus {
+      color: $colorAccent;
+    }
+    &--footer {
+      padding: 0;
+      margin-left: 0;
+      justify-content: center;
+      align-items: center;
+      @include font(inherit, 400, 14px, 24px, 0.03em, $textTransparent);
+      @include transition(null, null, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+      @include desktop {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+      }   
+    }
+  }
+  &__address {
+    justify-content: center;
+    align-items: center;
+    @include font('Roboto', 400, 14px, 24px, 00.03em, $textWhite);
+    @include transition(null, null, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    &:hover,
+    &:focus {
+      color: $colorAccent;
+    }
+  }
+  &__menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 736px;
+
+    background-color: $bgMain;
+    padding: 48px null 48px 40px;
+    &.is-open {
+      display: block;
+    }
+  }
+}
+
+
