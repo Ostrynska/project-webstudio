@@ -20,9 +20,9 @@
     }
 
   @include tablet {
+    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/hero-bg-768.jpg);
-
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-q3resolution: 2dppx) {
