@@ -765,7 +765,6 @@ body {
 .header {
   border-bottom: 1px;
   border-style: solid;
-  border-radius: solid;
   border-color: #eeeeee;
 }
 .header__container {
@@ -1031,6 +1030,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 1599px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-768.jpg);
   }
 }

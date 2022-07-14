@@ -1,5 +1,5 @@
 .header {
-  @include border(null, 1px, null, null, solid, null, $strokeLight);
+  @include border(null, 1px, null, null, null, $strokeLight);
   &__container {
     min-height: 60px;
     @include centeredFlex(flex);
