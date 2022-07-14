@@ -7,13 +7,6 @@
   color: $c;
 }
 
-@mixin bg($gr, $img, $bgr, $bgp, $bgs) {
-  background-image: $gr, $img;
-  background-repeat: $bgr;
-  background-position: $bgp;
-  background-size: $bgs;
-}
-
 @mixin centeredFlex($f) {
   display: $f;
   align-items: center;
@@ -134,14 +127,6 @@
 }
 @mixin desktop {
   @media screen and (min-width: 1200px) {
-    @content;
-  }
-}
-
-@mixin retina {
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
     @content;
   }
 }
