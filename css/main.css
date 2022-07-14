@@ -763,8 +763,12 @@ body {
 }
 
 .header {
+  border-top: 0;
   border-bottom: 1px;
+  border-left: 0;
+  border-right: 0;
   border-style: solid;
+  border-radius: 0;
   border-color: #eeeeee;
 }
 .header__container {
