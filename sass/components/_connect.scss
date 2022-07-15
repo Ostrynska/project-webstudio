@@ -14,7 +14,6 @@
     @include tablet {
       display: flex;
       flex-direction: column;
-      gap: 10px;
     }
     @include desktop {
       @include centeredFlex(flex);
@@ -27,7 +26,7 @@
       padding-bottom: 0;
       font-style: normal;
       text-align: center;
-      @include desktop {
+      @include tablet {
         margin-bottom: 0;
       }
     }
@@ -69,12 +68,20 @@
       display: flex;
       @include font(inherit, 500, 12px, 14px, 0.02em, $textSecondary);
       @include transition(null, null, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+      &--email {
+        padding-top: 20px;
+        margin-bottom: 10px;
+      }
+      &--tel {
+        padding-bottom: 20px;
+      }
     }
 
     @include desktop {
       @include centeredFlex(flex);
       padding-top: 32px;
       padding-bottom: 32px;
+      margin-bottom: 0;
       @include font(null, null, 14px, 16px, null, null);
       @include transition(null, null, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
     }

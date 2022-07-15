@@ -11,14 +11,24 @@
   }
   &__container {
     display: block;
+    box-align: baseline;
+    @include desktop {
+      display: flex;
+      align-items: baseline;
+    }  
+  }
+  &__wrap {
     @include tablet {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-    }
-    @include desktop {
+      box-align: baseline;
       align-items: baseline;
-    }  
+      margin-bottom: 60px;
+    @include desktop {
+      margin-bottom: 0;
+      }
+    }
   }
   &__soc-media {
     text-align: center;

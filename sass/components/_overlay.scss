@@ -6,12 +6,15 @@
   width: 100%;
   height: 100%;
   background-color: $bgOverlay;
-  transform: translatey(150%);
+  transform: translateY(150%);
   @include transition(null, null, transform, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
-  .product__item:hover &,
-  .product__item:focus & {
-    transform: translatey(0);
+  .product__link:focus & {
+    transform: translateY(0);
+  }
+  
+  .product__item:hover & {
+    transform: translateY(0);
   }
   & > &__text {
     padding: 63px 24px;

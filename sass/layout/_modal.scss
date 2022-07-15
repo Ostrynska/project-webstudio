@@ -42,6 +42,9 @@
     margin-bottom: 12px;
     @include font(inherit, 700, 20px, 23px, 0.03em, $textMain);
     text-align: center;
+    @media screen and (max-width:336px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -65,14 +68,14 @@
       }  
       &--link:hover {
       color: $bgHover;
-    }}
-
+    }
+  }
   &__icon-check {
   fill: transparent;
     .privacy__input:checked + .privacy__label & {
       fill: $bgMain;
     }  
-}
+  }
   &__icon {
     margin-right: 8.38px;
     display: inline-block;
@@ -87,6 +90,9 @@
         background-color: $colorAccent;
         border-color: $colorAccent;
         box-shadow: none;
+      }  
+      .privacy__input:focus + .privacy__label & {
+        border: 2px solid $colorAccent;
       }  
   }
 }
