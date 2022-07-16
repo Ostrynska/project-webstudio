@@ -345,11 +345,11 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .connect__link--email {
-    padding-top: 20px;
+    padding-top: 21px;
     margin-bottom: 10px;
   }
   .connect__link--tel {
-    padding-bottom: 20px;
+    padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
