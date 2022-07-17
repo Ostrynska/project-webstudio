@@ -21,14 +21,10 @@
     }
     &--footer {
       display: list-item;
-      margin-bottom: 60px;
       padding-top: 0;
       padding-bottom: 0;
       font-style: normal;
       text-align: center;
-      @include tablet {
-        margin-bottom: 0;
-      }
     }
   }
   &__item {
@@ -36,8 +32,12 @@
       margin-bottom: 8px;
       }
     &:last-child {
+      @include tablet {
+        margin-top: 10px;
+      }
       @include desktop {
         margin-left: 30px;
+        margin-top: 0px;
       }
     }
     &--footer:not(:last-child) {
@@ -70,7 +70,6 @@
       @include transition(null, null, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
       &--email {
         padding-top: 21px;
-        margin-bottom: 10px;
       }
       &--tel {
         padding-bottom: 21px;
@@ -81,7 +80,6 @@
       @include centeredFlex(flex);
       padding-top: 32px;
       padding-bottom: 32px;
-      margin-bottom: 0;
       @include font(null, null, 14px, 16px, null, null);
       @include transition(null, null, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
     }

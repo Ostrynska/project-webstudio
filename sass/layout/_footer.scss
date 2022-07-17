@@ -11,10 +11,9 @@
   }
   &__container {
     display: block;
-    box-align: baseline;
+    align-items: baseline;
     @include desktop {
       display: flex;
-      align-items: baseline;
     }  
   }
   &__wrap {
@@ -29,6 +28,12 @@
       margin-bottom: 0;
       }
     }
+  }
+  &__contacts {
+    margin-bottom: 60px;
+    @include tablet {
+      margin-bottom: 0;
+      }
   }
   &__soc-media {
     text-align: center;
