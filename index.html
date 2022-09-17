@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,13 +31,13 @@
           >
           <ul class="menu list">
             <li class="menu__item">
-              <a href="#studio" class="menu__link menu__link--current link">Студия</a>
+              <a href="#studio" class="menu__link menu__link--current link">Studio</a>
             </li>
             <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link link">Портфолио</a>
+              <a href="./portfolio.html" class="menu__link link">Portfolio</a>
             </li>
             <li class="menu__item">
-              <a href="#contacts" class="menu__link link">Контакты</a>
+              <a href="#contacts" class="menu__link link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -61,6 +61,16 @@
             </li>
           </ul>
         </div>
+        <div class="change">
+          <ul class="change__lng list">
+            <li class="change__en">
+              En
+            </li>
+            <li class="change__ru">
+              Ua              
+            </li>
+          </ul>
+        </div>
         <button type="button" class="button-menu button-menu__icon--open">
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
             <use class="button-menu__icon" href="./images/icons.svg#icon-menu"></use>
@@ -78,13 +88,13 @@
               <nav class="mob-menu__nav">
                 <ul class="mob-menu__list list">
                   <li class="mob-menu__item">
-                    <a href="#studio" class="mob-menu__link--current mob-menu__link link">Студия</a>
+                    <a href="#studio" class="mob-menu__link--current mob-menu__link link">Studio</a>
                   </li>
                   <li class="mob-menu__item">
-                    <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+                    <a href="./portfolio.html" class="mob-menu__link link">Portfolio</a>
                   </li>
                   <li class="mob-menu__item">
-                    <a href="#contacts" class="mob-menu__link link">Контакты</a>
+                    <a href="#contacts" class="mob-menu__link link">Contacts</a>
                   </li>
                 </ul>
               </nav>
@@ -134,15 +144,15 @@
       <!--Предложение-->
       <section class="hero">
         <div class="hero__container container">
-          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button" data-modal-open>Заказать услугу</button>
+          <h1 class="hero__title">Effective solutions for your business</h1>
+          <button type="button" class="button" data-modal-open>Order now</button>
         </div>
       </section>
 
       <!--Наши преимущества-->
       <section id="studio" class="benefits section">
         <div class="benefits_container container">
-          <h2 hidden class="visually-hidden">Наши преимущества</h2>
+          <h2 hidden class="visually-hidden">Benefits</h2>
 
           <ul class="benefits__list list">
             <li class="benefits__item">
@@ -151,9 +161,9 @@
                   <use href="./images/icons.svg#icon-benefits-antenna"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">Внимание к деталям</h3>
+              <h3 class="benefits__title">Attention to detail</h3>
               <p class="benefits__text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                Ideological considerations, and the beginning of the day-to-day work of shaping a position.
               </p>
             </li>
 
@@ -163,9 +173,9 @@
                   <use href="./images/icons.svg#icon-benefits-clock"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">Пунктуальность</h3>
+              <h3 class="benefits__title">Punctuality</h3>
               <p class="benefits__text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                The task of the organization, especially the scope and place of training entail.
               </p>
             </li>
 
@@ -175,9 +185,9 @@
                   <use href="./images/icons.svg#icon-benefits-diagram"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">Планирование</h3>
+              <h3 class="benefits__title">Planning</h3>
               <p class="benefits__text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
+                Likewise, the consultation with a wide range of assets is very much conditional.
               </p>
             </li>
 
@@ -187,9 +197,9 @@
                   <use href="./images/icons.svg#icon-benefits-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">Современные технологии</h3>
+              <h3 class="benefits__title">Modern technology</h3>
               <p class="benefits__text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                The importance of these problems is so obvious as planned tasks’ implementation.
               </p>
             </li>
           </ul>
@@ -199,7 +209,7 @@
       <!--Чем мы занимаемся-->
       <section id="portfolio" class="services section">
         <div class="services__container container">
-          <h2 class="services__title title">Чем мы занимаемся</h2>
+          <h2 class="services__title title">What we do</h2>
           <ul class="services__list list">
             <li class="services__item">
               <div class="services__thumb">
@@ -209,7 +219,7 @@
                 srcset=
                 "./images/services/services-1-desktop.jpg 1x, 
                 ./images/services/services-1-desktop@2x.jpg 2x" width="370"/>
-                <p class="services__lable">Десктопные приложения</p>
+                <p class="services__lable">Desktop applications</p>
               </div>
             </li>
 
@@ -222,7 +232,7 @@
                 "./images/services/services-2-desktop.jpg 1x, 
                 ./images/services/services-2-desktop@2x.jpg 2x" 
                 width="370"/>
-                <p class="services__lable">Мобильные приложения</p>
+                <p class="services__lable">Mobile applications</p>
               </div>
             </li>
 
@@ -234,7 +244,7 @@
                 srcset=
                 "./images/services/services-3-desktop.jpg 1x, 
                 ./images/services/services-3-desktop@2x.jpg 2x" width="370"/>
-                <p class="services__lable">Дизайнерские решения</p>
+                <p class="services__lable">Design solutions</p>
               </div>
             </li>
           </ul>
@@ -244,7 +254,7 @@
       <!--Наша команда-->
       <section class="team section">
         <div class="team__container container">
-          <h2 class="title team__title">Наша команда</h2>
+          <h2 class="title team__title">Team</h2>
           <ul class="team__list list">
             <li class="team__items">
               <picture>
@@ -266,11 +276,11 @@
                   ./images/team/team-1-mobile@2x.jpg 2x"
 									type="image/jpeg"
 								/>
-								<img src="./images/team/team-1-mobile.jpg" alt="Продакт дизайнер" width="450" />
+								<img src="./images/team/team-1-mobile.jpg" alt="Product Designer" width="450" />
 							</picture>
 
               <div class="team__content">
-                <h3 class="team__member">Игорь Демьяненко</h3>
+                <h3 class="team__member">Igor Demyanenko</h3>
                 <p lang="en" class="team__item">Product Designer</p>
                 <ul class="soc-media list">
                   <li class="soc-media__item">
@@ -329,7 +339,7 @@
 							</picture>
 
               <div class="team__content">
-                <h3 class="team__member">Ольга Репина</h3>
+                <h3 class="team__member">Olga Repina</h3>
                 <p lang="en" class="team__item">Frontend Developer</p>
                 <ul class="soc-media list">
                   <li class="soc-media__item">
@@ -384,11 +394,11 @@
                   ./images/team/team-3-mobile@2x.jpg 2x"
 									type="image/jpeg"
 								/>
-								<img src="./images/team/team-3-mobile.jpg" alt="Маркетолог" width="450" />
+								<img src="./images/team/team-3-mobile.jpg" alt="Marketing" width="450" />
 							</picture>
 
               <div class="team__content">
-                <h3 class="team__member">Николай Тарасов</h3>
+                <h3 class="team__member">Nikolay Tarasov</h3>
                 <p lang="en" class="team__item">Marketing</p>
                 <ul class="soc-media list">
                   <li class="soc-media__item">
@@ -443,11 +453,11 @@
                   ./images/team/team-4-mobile@2x.jpg 2x"
 									type="image/jpeg"
 								/>
-								<img src="./images/team/team-4-mobile.jpg" alt="Дизайнер интерфейса" width="450" />
+								<img src="./images/team/team-4-mobile.jpg" alt="UI Designer" width="450" />
 							</picture>
 
               <div class="team__content">
-                <h3 class="team__member">Михаил Ермаков</h3>
+                <h3 class="team__member">Mikhail Yermakov</h3>
                 <p lang="en" class="team__item">UI Designer</p>
                 <ul class="soc-media list">
                   <li class="soc-media__item">
@@ -489,7 +499,7 @@
     <!--Постоянные клиенты-->
     <section class="clients section">
       <div class="clients__container container">
-        <h2 class="clients__title title">Постоянные клиенты</h2>
+        <h2 class="clients__title title">Clients</h2>
         <ul class="clients__list list">
           <li class="clients__item">
             <a href="" class="clients__link link">
@@ -549,7 +559,7 @@
             <address id="contacts" class="connect connect-footer">
               <ul class="connect__list connect__list--footer list">
                 <li class="connect__item connect__item--footer">
-                  <a href="" class="connect__address link">г. Киев, пр-т Леси Украинки, 26</a>
+                  <a href="" class="connect__address link">city Kyiv, Lesya Ukrainka Blvd, 26</a>
                 </li>
                 <li class="connect__item connect__item--footer">
                   <a href="mailto:info@example.com" class="connect__link connect__link--footer link"
@@ -567,7 +577,7 @@
   
           <div class="footer__soc-media">
             <p class="footer__text">
-              <strong>Присоединяйтесь</strong>
+              <strong>Join us</strong>
             </p>
             <ul class="soc-media list">
               <li class="soc-media__item">
@@ -603,7 +613,7 @@
         </div>
 
         <div class="footer__subscribe">
-          <p class="footer__text"><strong>Подпишитесь на рассылку</strong></p>
+          <p class="footer__text"><strong>Get our newsletter</strong></p>
           <form class="form">
             <label for="subscribe-email" class="form__label form__label--footer"></label>
             <input
@@ -615,7 +625,7 @@
               id="subscribe-email"
             />
             <button type="submit" class="button button-icon">
-              Подписаться
+              Subscribe
               <svg class="button__icon button__icon--end" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -633,18 +643,18 @@
           </svg>
         </button>
         <p class="modal__title">
-          <strong>Оставьте свои данные, мы вам перезвоним</strong>
+          <strong>Leave your phone number and we will call you back</strong>
         </p>
         <form class="form">
           <div class="form__wrap form__wrap--information">
-            <label class="form__label" for="user-name">Имя</label>
+            <label class="form__label" for="user-name">Name</label>
             <input type="text" name="user-name" class="form__input" required id="user-name" />
             <svg class="form__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
           <div class="form__wrap form__wrap--information">
-            <label class="form__label" for="user-tel">Телефон</label>
+            <label class="form__label" for="user-tel">Phone number</label>
             <input
               type="tel"
               name="user-tel"
@@ -658,19 +668,19 @@
             </svg>
           </div>
           <div class="form__wrap form__wrap--information">
-            <label class="form__label" for="user-email">Почта</label>
+            <label class="form__label" for="user-email">E-mail</label>
             <input type="email" name="user-email" class="form__input" required id="user-email" />
             <svg class="form__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
           <div class="form__wrap form__wrap--comment">
-            <label class="form__label" for="modal-text">Комментарий</label>
+            <label class="form__label" for="modal-text">Comment</label>
             <textarea
               name="modal-text"
               id="modal-text"
               class="form__text-area"
-              placeholder="Введите текст"
+              placeholder="Please leave your comment or question in this field and we will get in touch with you as soon as possible"
               rows="6"
             ></textarea>
           </div>
@@ -687,11 +697,11 @@
                   <use href="./images/icons.svg#icon-verified"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю&nbsp;
-              <a href="" class="privacy__label privacy__label--link">Условия договора</a>
+              I agree to the&nbsp;
+              <a href="" class="privacy__label privacy__label--link">Terms of service</a>
             </label>
           </div>
-          <button type="submit" class="button button-modal" data-modal="">Отправить</button>
+          <button type="submit" class="button button-modal" data-modal="">Submit</button>
         </form>
       </div>
     </div>
@@ -700,7 +710,8 @@
     <script>
       AOS.init();
     </script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/subscribe-btn.js"></script>
   </body>
 </html>
