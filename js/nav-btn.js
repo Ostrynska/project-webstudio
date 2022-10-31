@@ -1,35 +1,44 @@
-const btns = document.querySelectorAll('.buttons__portfolio');
 const products = document.querySelectorAll('.product__item');
+const btns = document.querySelectorAll('.buttons__portfolio');
+const selectedBtns = new Set();
 
-// for (let i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener('click', e => {
-//     e.preventDefault();
+function filter(category, items) {
+  items.forEach(item => {
+    const isItemfilter = !item.classList.contains(category);
+    const isShowAll = category.toLowerCase() === 'all';
+    if (isItemfilter && !isShowAll) {
+      item.classList.add('hide');
+    } else {
+      item.classList.remove('hide');
+    }
+  });
+}
 
-//     const value = e.target.dataset.value;
-//     // console.log(value);
-//     btns.forEach(btn => {
-//       if (value === '') {
-//         product.style.display = 'block';
-//       }
-//     });
-//   });
-// }
+function app() {
+  btns.forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      if (e.target.nodeName !== 'BUTTON') {
+        return;
+      }
 
-// const rating = document.getElementById('rating');
-// const elements = document.querySelectorAll('li');
+      const btn = e.target;
+      const isActive = btn.classList.contains('buttons__portfolio--current');
 
-// rating.addEventListener('change', function () {
-//   let value = rating.value;
-//   [...elements].forEach(element => {
-//     if (value === '') {
-//       element.classList.remove('hidden');
-//     } else {
-//       const rating = element.dataset.rating;
-//       if (!rating || rating < value) {
-//         element.classList.add('hidden');
-//       } else {
-//         element.classList.remove('hidden');
-//       }
-//     }
-//   });
-// });
+      const currentCategoty = btn.dataset.filter;
+      if (isActive) {
+        selectedBtns.delete(currentCategoty);
+      } else {
+        selectedBtns.add(currentCategoty);
+      }
+
+      if (selectedBtns) {
+        btns[0].classList.remove('buttons__portfolio--current');
+      }
+
+      filter(currentCategoty, products);
+    });
+  });
+}
+
+app();
