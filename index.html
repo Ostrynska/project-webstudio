@@ -31,13 +31,13 @@
           >
           <ul class="menu list">
             <li class="menu__item">
-              <a href="#studio" class="menu__link menu__link--current link">Studio</a>
+              <a href="#studio" class="menu__link menu__link--current link studio">Studio</a>
             </li>
             <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link link">Portfolio</a>
+              <a href="./portfolio.html" class="menu__link link potfolio">Portfolio</a>
             </li>
             <li class="menu__item">
-              <a href="#contacts" class="menu__link link">Contacts</a>
+              <a href="#contacts" class="menu__link link contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -62,10 +62,10 @@
           </ul>
         </div>
         <div class="change">
-          <ul class="change__lng list">
-            <li class="change__en">En</li>
-            <li class="change__ru">Ua</li>
-          </ul>
+          <select class="change__lang">
+            <option value="en">En</option>
+            <option value="ua">Ua</option>
+          </select>
         </div>
         <button type="button" class="button-menu button-menu__icon--open">
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -709,6 +709,8 @@
     </script>
     <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/menu.js"></script>
-    <script type="module" src="./js/subscribe-btn.js"></script>
+    <!-- <script type="module" src="./js/subscribe-btn.js"></script> -->
+    <script type="module" src="./js/change-lng.js"></script>
+    <script type="module" src="./js/lang.js"></script>
   </body>
 </html>
