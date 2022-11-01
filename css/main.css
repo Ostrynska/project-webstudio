@@ -160,7 +160,7 @@ body {
 .button-menu {
   position: relative;
   display: block;
-  margin-left: auto;
+  margin-left: 20px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -250,6 +250,61 @@ body {
   color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.change {
+  margin-left: auto;
+  padding: 27px 0px 27px 0px;
+}
+@media screen and (min-width: 768px) {
+  .change {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .change {
+    margin-left: 20px;
+  }
+}
+
+select {
+  border: none;
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+select:focus,
+select:hover,
+option:hover,
+option:focus {
+  border: none;
+  outline: none;
+  border: transparent;
+  color: #2196f3;
+}
+
+option {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 
 @media screen and (min-width: 768px) {
