@@ -26,13 +26,15 @@
           >
           <ul class="menu list">
             <li class="menu__item">
-              <a href="./index.html" class="menu__link link">Студия</a>
+              <a href="./index.html" class="menu__link link lng-studio">Studio</a>
             </li>
             <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link menu__link--current link">Портфолио</a>
+              <a href="./portfolio.html" class="menu__link link lng-portfolio menu__link--current"
+                >Portfolio</a
+              >
             </li>
             <li class="menu__item">
-              <a href="#contacts" class="menu__link link">Контакты</a>
+              <a href="#contacts" class="menu__link link lng-contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -56,6 +58,12 @@
             </li>
           </ul>
         </div>
+        <div class="change">
+          <select class="change__lang">
+            <option value="en">EN</option>
+            <option value="ua">UA</option>
+          </select>
+        </div>
         <button type="button" class="button-menu button-menu__icon--open">
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
             <use class="button-menu__icon" href="./images/icons.svg#icon-menu"></use>
@@ -73,13 +81,17 @@
               <nav class="mob-menu__nav">
                 <ul class="mob-menu__list list">
                   <li class="mob-menu__item">
-                    <a href="#studio" class="mob-menu__link--current mob-menu__link link">Студия</a>
+                    <a href="./index.html" class="mob-menu__link link lng-studio">Studio</a>
                   </li>
                   <li class="mob-menu__item">
-                    <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+                    <a
+                      href="./portfolio.html"
+                      class="mob-menu__link--current mob-menu__link link lng-portfolio"
+                      >Portfolio</a
+                    >
                   </li>
                   <li class="mob-menu__item">
-                    <a href="#contacts" class="mob-menu__link link">Контакты</a>
+                    <a href="#contacts" class="mob-menu__link link lng-contacts">Contacts</a>
                   </li>
                 </ul>
               </nav>
@@ -120,33 +132,39 @@
     <main>
       <section class="section portfolio">
         <div class="container portfolio__container">
-          <h1 hidden class="visually-hidden">WebStudio Портфолио</h1>
+          <h1 hidden class="visually-hidden">WebStudio Portfolio</h1>
           <ul class="buttons buttons-list list">
             <li class="buttons__item">
               <button
                 type="button"
-                class="buttons__portfolio buttons__portfolio--current"
+                class="buttons__portfolio buttons__portfolio--current lng-all"
                 data-filter="all"
               >
-                Все
+                All
               </button>
             </li>
             <li class="buttons__item">
-              <button type="button" class="buttons__portfolio" data-filter="webpages">
-                Веб-сайты
+              <button type="button" class="buttons__portfolio lng-webpages" data-filter="webpages">
+                Web-pages
               </button>
             </li>
             <li class="buttons__item">
-              <button type="button" class="buttons__portfolio" data-filter="apps">
-                Приложения
+              <button type="button" class="buttons__portfolio lng-apps" data-filter="apps">
+                Apps
               </button>
             </li>
             <li class="buttons__item">
-              <button type="button" class="buttons__portfolio" data-filter="design">Дизайн</button>
+              <button type="button" class="buttons__portfolio lng-design" data-filter="design">
+                Design
+              </button>
             </li>
             <li class="buttons__item">
-              <button type="button" class="buttons__portfolio" data-filter="marketing">
-                Маркетинг
+              <button
+                type="button"
+                class="buttons__portfolio lng-marketing"
+                data-filter="marketing"
+              >
+                Marketing
               </button>
             </li>
           </ul>
@@ -188,16 +206,15 @@
                     />
                   </picture>
                   <div class="overlay">
-                    <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                    <p class="overlay__text lng-overlay__text_1">
+                      Technocryak is a modern coronavirus distribution platform. Companies use this
+                      platform for digital espionage and attacks on competitors' secure servers.
                     </p>
                   </div>
                 </div>
                 <div class="product__description">
-                  <h2 class="product__name">Технокряк</h2>
-                  <p class="product__category">Веб-сайт</p>
+                  <h2 class="product__name lng-product__name_1">Technocryak</h2>
+                  <p class="product__category lng-webpages_1">Web-page</p>
                 </div>
               </a>
             </li>
@@ -238,18 +255,19 @@
                     />
                   </picture>
                   <div class="overlay">
-                    <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                    <p class="overlay__text lng-overlay__text_2">
+                      Posters are an incredibly creative form of design. Their goal is to capture
+                      and hold the consumer's attention. The 'New Orlean vs Golden Star' poster fits
+                      into a modern illustrated style.
                     </p>
                   </div>
                 </div>
                 <div class="product__description">
                   <h2 class="product__name">
-                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                    <span lang="en"> New Orlean vs Golden Star</span>
+                    <span class="lng-product__name_2">Poster</span>
                   </h2>
-                  <p class="product__category">Дизайн</p>
+                  <p class="product__category lng-design_1">Design</p>
                 </div>
               </a>
             </li>
@@ -290,16 +308,18 @@
                     />
                   </picture>
                   <div class="overlay">
-                    <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                    <p class="overlay__text lng-overlay__text_3">
+                      The key components of the Seafood restaurant application are the possibility
+                      of delivery, the most convenient menu for viewing positions and choosing
+                      dishes, and ordering in just a few clicks.
                     </p>
                   </div>
                 </div>
                 <div class="product__description">
-                  <h2 class="product__name">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="product__category">Приложение</p>
+                  <h2 class="product__name">
+                    <span class="lng-product__name_3">Restaurant</span><span> Seafood</span>
+                  </h2>
+                  <p class="product__category lng-apps_1">App</p>
                 </div>
               </a>
             </li>
@@ -340,16 +360,18 @@
                     />
                   </picture>
                   <div class="overlay">
-                    <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                    <p class="overlay__text lng-overlay__text_4">
+                      The Prime project is a classic systems approach from the tech side combined
+                      with the free creative thinking of the design and marketing teams.
                     </p>
                   </div>
                 </div>
                 <div class="product__description">
-                  <h2 class="product__name">Проект <span lang="en">Prime</span></h2>
-                  <p class="product__category">Маркетинг</p>
+                  <h2 class="product__name">
+                    <span class="lng-product__name_4">Project</span>
+                    <span> "Prime"</span>
+                  </h2>
+                  <p class="product__category lng-marketing_1">Marketing</p>
                 </div>
               </a>
             </li>
@@ -390,16 +412,17 @@
                     />
                   </picture>
                   <div class="overlay">
-                    <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                    <p class="overlay__text lng-overlay__text_5">
+                      PC Magazine's Editors' Choice Winner: "There are a lot of great file storage
+                      and syncing services out there, but Boxes is unbeatable."
                     </p>
                   </div>
                 </div>
                 <div class="product__description">
-                  <h2 class="product__name">Проект <span lang="en">Boxes</span></h2>
-                  <p class="product__category">Приложение</p>
+                  <h2 class="product__name">
+                    <span class="lng-product__name_5">Project</span><span> "Boxes"</span>
+                  </h2>
+                  <p class="product__category lng-apps_2">App</p>
                 </div>
               </a>
             </li>
@@ -440,16 +463,16 @@
                     />
                   </picture>
                   <div class="overlay">
-                    <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                    <p class="overlay__text lng-overlay__text_6">
+                      The website Inspiration has no Borders is a kind of social network. It is
+                      designed for art lovers. Here you can find a lot of ideas not only for
+                      Internet projects in particular, but also for corporate style.
                     </p>
                   </div>
                 </div>
                 <div class="product__description">
-                  <h2 class="product__name" lang="en">Inspiration has no Borders</h2>
-                  <p class="product__category">Веб-сайт</p>
+                  <h2 class="product__name">Inspiration has no Borders</h2>
+                  <p class="product__category lng-webpages_2">Веб-сторінкa</p>
                 </div>
               </a>
             </li>
@@ -490,16 +513,18 @@
                     />
                   </picture>
                   <div class="overlay">
-                    <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                    <p class="overlay__text lng-overlay__text_7">
+                      The professional design allows you to maximally adjust to the preferences and
+                      expectations of the target audience and develop product not only beautiful,
+                      but also convenient and well-structured.
                     </p>
                   </div>
                 </div>
                 <div class="product__description">
-                  <h2 class="product__name">Издание <span lang="en">Limited Edition</span></h2>
-                  <p class="product__category">Дизайн</p>
+                  <h2 class="product__name">
+                    <span class="lng-product__name_7">Limited Edition</span>
+                  </h2>
+                  <p class="product__category lng-design_2">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -540,16 +565,19 @@
                     />
                   </picture>
                   <div class="overlay">
-                    <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                    <p class="overlay__text lng-overlay__text_8">
+                      The LAB project is constantly guided by a number of principles and standards
+                      that distinguish us from competitors and allow us to promote our companies in
+                      a quality manner.
                     </p>
                   </div>
                 </div>
                 <div class="product__description">
-                  <h2 class="product__name">Проект <span lang="en" class="abbr">LAB</span></h2>
-                  <p class="product__category">Маркетинг</p>
+                  <h2 class="product__name">
+                    <span class="lng-product__name_8">Project</span>
+                    <span class="abbr">"LAB"</span>
+                  </h2>
+                  <p class="product__category lng-marketing_2">Marketing</p>
                 </div>
               </a>
             </li>
@@ -590,16 +618,16 @@
                     />
                   </picture>
                   <div class="overlay">
-                    <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                    <p class="overlay__text lng-overlay__text_9">
+                      Growing Business is a great expense reporting app for your business. The app
+                      records your purchases, generates reports and helps you with employee
+                      reimbursement.
                     </p>
                   </div>
                 </div>
                 <div class="product__description">
-                  <h2 class="product__name" lang="en">Growing Business</h2>
-                  <p class="product__category">Приложение</p>
+                  <h2 class="product__name">Growing Business</h2>
+                  <p class="product__category lng-apps_3">App</p>
                 </div>
               </a>
             </li>
@@ -620,7 +648,9 @@
             <address id="contacts" class="connect connect-footer">
               <ul class="connect__list connect__list--footer list">
                 <li class="connect__item connect__item--footer">
-                  <a href="" class="connect__address link">г. Киев, пр-т Леси Украинки, 26</a>
+                  <a href="" class="connect__address link lng-connect__address"
+                    >city Kyiv, Lesya Ukrainka Blvd, 26</a
+                  >
                 </li>
                 <li class="connect__item connect__item--footer">
                   <a href="mailto:info@example.com" class="connect__link connect__link--footer link"
@@ -637,8 +667,8 @@
           </div>
 
           <div class="footer__soc-media">
-            <p class="footer__text">
-              <strong>Присоединяйтесь</strong>
+            <p class="footer__text lng-footer__text">
+              <strong>Join us</strong>
             </p>
             <ul class="soc-media list">
               <li class="soc-media__item">
@@ -674,7 +704,7 @@
         </div>
 
         <div class="footer__subscribe">
-          <p class="footer__text"><strong>Подпишитесь на рассылку</strong></p>
+          <p class="footer__text lng-footer__subscribe"><strong>Get our newsletter</strong></p>
           <form class="form">
             <label for="subscribe-email" class="form__label form__label--footer"></label>
             <input
@@ -686,7 +716,7 @@
               id="subscribe-email"
             />
             <button type="submit" class="button button-icon">
-              Подписаться
+              <span class="lng-icon">Subscribe</span>
               <svg class="button__icon button__icon--end" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -696,78 +726,8 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="button-close" data-modal-close>
-          <svg class="modal-close-icon" width="18" height="18">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="modal__title">
-          <strong>Оставьте свои данные, мы вам перезвоним</strong>
-        </p>
-        <form class="form">
-          <div class="form__wrap form__wrap--information">
-            <label class="form__label" for="user-name">Имя</label>
-            <input type="text" name="user-name" class="form__input" required id="user-name" />
-            <svg class="form__icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
-          </div>
-          <div class="form__wrap form__wrap--information">
-            <label class="form__label" for="user-tel">Телефон</label>
-            <input
-              type="tel"
-              name="user-tel"
-              class="form__input"
-              required
-              minlength="10"
-              id="user-tel"
-            />
-            <svg class="form__icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </div>
-          <div class="form__wrap form__wrap--information">
-            <label class="form__label" for="user-email">Почта</label>
-            <input type="email" name="user-email" class="form__input" required id="user-email" />
-            <svg class="form__icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </div>
-          <div class="form__wrap form__wrap--comment">
-            <label class="form__label" for="modal-text">Комментарий</label>
-            <textarea
-              name="modal-text"
-              id="modal-text"
-              class="form__text-area"
-              placeholder="Введите текст"
-              rows="6"
-            ></textarea>
-          </div>
-          <div class="privacy privacy-wrap">
-            <input
-              type="checkbox"
-              name="privacy"
-              id="privacy"
-              class="privacy__input visually-hidden"
-            />
-            <label for="privacy" class="privacy__label">
-              <span class="privacy__icon">
-                <svg class="privacy__icon-check" width="11" height="8">
-                  <use href="./images/icons.svg#icon-verified"></use>
-                </svg>
-              </span>
-              Соглашаюсь с рассылкой и принимаю&nbsp;
-              <a href="" class="privacy__label privacy__label--link">Условия договора</a>
-            </label>
-          </div>
-          <button type="submit" class="button button-modal" data-modal="">Отправить</button>
-        </form>
-      </div>
-    </div>
-
     <script type="module" src="./js/menu.js"></script>
     <script type="module" src="./js/nav-btn.js"></script>
+    <script type="module" src="./js/change-lng.js"></script>
   </body>
 </html>
