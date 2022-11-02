@@ -125,16 +125,12 @@
 select {
   border: none;
   display: inline-block;
-  padding: 0 10px 0 10px;
+  padding: 0 0 0 10px;
   margin: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   @include font(inherit, 500, 14px, 16px, 0.02em, $textMain);
   @include transition(null, null, color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
-
+  cursor: pointer;
+  background-color: transparent;
 }
 
 select:focus,
@@ -150,5 +146,6 @@ option:focus {
 
 option {
   @include font(inherit, 500, 14px, 16px, 0.02em, $textMain);
+
 }
 
