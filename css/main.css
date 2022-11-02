@@ -270,13 +270,8 @@ body {
 select {
   border: none;
   display: inline-block;
-  padding: 0 10px 0 10px;
+  padding: 0 0 0 10px;
   margin: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -286,6 +281,8 @@ select {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  background-color: transparent;
 }
 
 select:focus,
