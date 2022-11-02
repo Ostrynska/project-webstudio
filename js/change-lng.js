@@ -128,7 +128,7 @@ const langArr = {
     ua: 'Коментар',
   },
   privacy: {
-    en: 'I agree to the',
+    en: 'I agree to receive the newsletter and to',
     ua: 'Погоджуюсь отримати розсилку та приймаю',
   },
   privacy__link: {
@@ -163,17 +163,45 @@ const langArr = {
     en: 'Web-page',
     ua: 'Веб-сторінкa',
   },
+  webpages_2: {
+    en: 'Web-page',
+    ua: 'Веб-сторінкa',
+  },
   apps_1: {
     en: 'App',
     ua: 'Програма',
+  },
+  apps_2: {
+    en: 'App',
+    ua: 'Програма',
+  },
+  apps_3: {
+    en: 'App',
+    ua: 'Програма',
+  },
+  design_1: {
+    en: 'Design',
+    ua: 'Дизайн',
+  },
+  design_2: {
+    en: 'Design',
+    ua: 'Дизайн',
+  },
+  marketing_1: {
+    en: 'Marketing',
+    ua: 'Маркетинг',
+  },
+  marketing_2: {
+    en: 'Marketing',
+    ua: 'Маркетинг',
   },
   product__name_1: {
     en: 'Technocryak',
     ua: 'Технокряк',
   },
   overlay__text_1: {
-    en: 'Technocryak is a modern coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors',
-    ua: 'Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.',
+    en: 'Technocryak is a modern information distribution platform. Companies use this platform for digital espionage and attacks on competitors. The resource offers different levels of functionality.',
+    ua: 'Технокряк це сучасний майданчик поширення інформації. Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить отримати відвідувачу відомості.',
   },
   product__name_2: {
     en: 'Poster',
@@ -182,6 +210,54 @@ const langArr = {
   overlay__text_2: {
     en: "Posters are an incredibly creative form of design. Their goal is to capture and hold the consumer's attention. The 'New Orlean vs Golden Star' poster fits into a modern illustrated style.",
     ua: 'Постери – неймовірно творча форма дизайну. Їх мета полягає в тому, щоб захопити і утримати увагу споживача. Постер New Orlean vs Golden Star вписується в сучасний ілюстрований стиль.',
+  },
+  product__name_3: {
+    en: 'Restaurant',
+    ua: 'Ресторан',
+  },
+  overlay__text_3: {
+    en: 'The key components of the Seafood restaurant application are the possibility of delivery, the most convenient menu for viewing positions and choosing dishes, and ordering in just a few clicks.',
+    ua: 'Ключові складові програми ресторану Seafood – це можливість доставки, максимально зручне меню для перегляду позицій та вибору страв, шлях замовлення всього декілька кліків.',
+  },
+  product__name_4: {
+    en: 'Project',
+    ua: 'Проект',
+  },
+  overlay__text_4: {
+    en: 'The Prime project is a classic systems approach from the tech side combined with the free creative thinking of the design and marketing teams.',
+    ua: 'Проект Prime – класичний системний підхід, властивий технічним фахівцям, поєднаний із вільним креативним мисленням дизайнерських та маркетингових команд.',
+  },
+  product__name_5: {
+    en: 'Project',
+    ua: 'Проект',
+  },
+  overlay__text_5: {
+    en: "PC Magazine's Editors' Choice Winner: 'There are a lot of great file storage and syncing services out there, but Boxes is unbeatable.",
+    ua: 'Переможець у номінації "Вибір редакції" авторитетного журналу PC Magazine: "Існує безліч сервісів для зберігання та синхронізації файлів, проте Boxes залишається поза конкуренцією.',
+  },
+  overlay__text_6: {
+    en: 'The website Inspiration has no Borders is a kind of social network. It is designed for art lovers. Here you can find a lot of ideas not only for Internet projects in particular, but also for corporate style.',
+    ua: 'Сайт Inspiration has no Borders є своєрідною соцмережею. Він призначений для шанувальників творчості. Тут можна знайти безліч ідей для інтернет-проектів та корпоративного стилю.',
+  },
+  product__name_7: {
+    en: 'Limited Edition',
+    ua: 'Видання Limited Edition',
+  },
+  overlay__text_7: {
+    en: 'The professional design allows you to maximally adjust to the preferences and expectations of the target audience and develop product not only beautiful, but also convenient and well-structured.',
+    ua: 'Професійний дизайн видання дозволяє максимально підлаштуватися під переваги та очікування цільової аудиторії та розробити продукт красивим, зручним та добре структурованим.',
+  },
+  product__name_8: {
+    en: 'Project',
+    ua: 'Проект',
+  },
+  overlay__text_8: {
+    en: 'The LAB project is constantly guided by a number of principles and standards that distinguish us from competitors and allow us to promote our companies in a quality manner.',
+    ua: 'Проект LAB невідступно керується низкою принципів та стандартів, які вигідно відрізняють нас від конкурентів та дозволяють якісно просувати компанії.',
+  },
+  overlay__text_9: {
+    en: 'Growing Business is a great expense reporting app for your business. The app records your purchases, generates reports and helps you with employee reimbursement.',
+    ua: 'Growing Business - чудовий додаток для складання звітів про витрати бізнесу. Додаток записує дані про ваші покупки, складає звіти та допомагає вам відшкодовувати витрати співробітникам.',
   },
 };
 
